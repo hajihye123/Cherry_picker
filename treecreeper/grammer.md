@@ -42,3 +42,13 @@ sys.stdin.readline()`
   `print("%d + %d = %d"%(1, 3, 4))`
 
   출력: 1 + 3 = 4
+
+# try-except
+
+```
+try:
+	명령
+except:
+	명령
+```
+
