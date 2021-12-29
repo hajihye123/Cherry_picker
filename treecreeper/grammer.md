@@ -4,15 +4,24 @@
 
 `input()`
 
-- 숫자 여러 개 입력받기
+- 숫자 여러 개 입력 받기
 
   `map(int, input().split())`
 
-## 방법 2 - input() 보다 빠른 방법
+## 방법 2 - sys.stdin.readline()
 
-`import sys`
+- 이 방법은 input()보다 속도가 빠르다.
 
-`sys.stdin.readline()`
+`import sys
+sys.stdin.readline()`
+
+- 숫자 여러 개 입력 받기
+
+  `map(int, sys.stdin.readline().split())`
+
+- 숫자 배열로 입력 받기
+
+  `list(map(int, sys.stdin.readline().split()))`
 
 # print() 서식
 
@@ -32,4 +41,4 @@
 
   `print("%d + %d = %d"%(1, 3, 4))`
 
-  
+  출력: 1 + 3 = 4
