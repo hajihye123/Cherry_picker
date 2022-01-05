@@ -12,8 +12,8 @@
 
 - 이 방법은 input()보다 속도가 빠르다.
 
-`import sys
-sys.stdin.readline()`
+`import sys`
+`sys.stdin.readline()`
 
 - 숫자 여러 개 입력 받기
 
