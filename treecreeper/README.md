@@ -37,7 +37,7 @@
 
 %s: 문자열
 
-- 예시
+- # 예시
 
   `print("%d + %d = %d"%(1, 3, 4))`
 
@@ -80,3 +80,8 @@ a = [1, 2, 3]
 b = copy.deepcopy(a)
 ```
 
+# math
+
+`import math`
+
+- `math.ceil(num)`: 올림 처리
