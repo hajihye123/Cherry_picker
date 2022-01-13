@@ -85,3 +85,9 @@ b = copy.deepcopy(a)
 `import math`
 
 - `math.ceil(num)`: 올림 처리
+
+### sum
+
+- 숫자 i의 각 자릿수 합 구하기
+
+  `sum((map(int, str(i))))`
