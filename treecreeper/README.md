@@ -1,6 +1,10 @@
-# 입출력
+# 문제 풀 때 사용하는 문법 정리
 
-## 방법 1 - input()
+
+
+## 입출력
+
+### 방법 1 - input()
 
 `input()`
 
@@ -8,7 +12,7 @@
 
   `map(int, input().split())`
 
-## 방법 2 - sys.stdin.readline()
+### 방법 2 - sys.stdin.readline()
 
 - 이 방법은 input()보다 속도가 빠르다.
 
@@ -23,7 +27,7 @@
 
   `list(map(int, sys.stdin.readline().split()))`
 
-# print() 서식
+## print() 서식
 
 %d: 10진수 정수
 
@@ -37,7 +41,7 @@
 
 %s: 문자열
 
-- # 예시
+- ### 예시
 
   `print("%d + %d = %d"%(1, 3, 4))`
 
@@ -51,7 +55,7 @@
 print("{:.3f}".format(num))		# 3 대신 다른 숫자를 넣으면 된다.
 ```
 
-# try-except
+## try-except
 
 ```
 try:
@@ -60,7 +64,7 @@ except:
 	명령
 ```
 
-# shallow copy & deep copy
+## shallow copy & deep copy
 
 shallow copy(얕은 복사)
 
@@ -80,11 +84,14 @@ a = [1, 2, 3]
 b = copy.deepcopy(a)
 ```
 
-# math
+## math
 
 `import math`
 
-- `math.ceil(num)`: 올림 처리
+- `math.ceil(num)`: 올림
+- `math.floor(num)`: 버림
+
+- `round(num)`: 반올림
 
 ### sum
 
