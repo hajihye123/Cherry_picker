@@ -98,3 +98,36 @@ b = copy.deepcopy(a)
 - 숫자 i의 각 자릿수 합 구하기
 
   `sum((map(int, str(i))))`
+
+## 정렬
+
+- python의 정렬은 기본적으로 stable 정렬이다.
+
+  ex) 카드의 숫자와 모양이 그대로 유지된 채로 정렬
+
+- 내가 원하는 key로 정렬하는 법
+
+  1. list의 길이순으로 정렬: `list.sort(key=len)`
+  2. list가 다중 원소로 구성된 경우 원하는 원소로 정렬: `list.sort(key=lambda x: x[0])`
+
+
+
+## 딕셔너리
+
+1. 딕셔너리이름 = {"key값" : "value값"} 
+
+2. key 중복 허용 X
+
+3. key가 중복될 경우, 마지막에 입력된 key의 value를 출력
+
+
+
+​	**ex)**
+
+​	a = {"key1":"value1", "key2":"value2", "key1":"value3"}
+
+​	print(a["key1"])
+
+
+
+​	결과:  value3
