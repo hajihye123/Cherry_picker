@@ -110,7 +110,15 @@ b = copy.deepcopy(a)
   1. list의 길이순으로 정렬: `list.sort(key=len)`
   2. list가 다중 원소로 구성된 경우 원하는 원소로 정렬: `list.sort(key=lambda x: x[0])`
 
+## 배열
 
+- 2차원 배열 선언
+
+  `배열 = [[0 for _ in range(10)] for _ in range(10)] `
+
+- 3차원 배열 선언
+
+  `배열 = [[[0 for _ in range(10)] for _ in range(10)] for _ range(10)]`
 
 ## 딕셔너리
 
