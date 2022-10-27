@@ -122,20 +122,58 @@ b = copy.deepcopy(a)
 
 ## 딕셔너리
 
-1. 딕셔너리이름 = {"key값" : "value값"} 
-
+1. 딕셔너리 초기화
+   `딕셔너리이름 = {"key값" : "value값"} `
+   `딕셔너리이름 = dict()`
 2. key 중복 허용 X
-
 3. key가 중복될 경우, 마지막에 입력된 key의 value를 출력
 
+```
+a = {"key1":"value1", "key2":"value2", "key1":"value3"}
+print(a["key1"])
 
+결과: value3
+```
 
-​	**ex)**
+4. 원소 가져오기
 
-​	a = {"key1":"value1", "key2":"value2", "key1":"value3"}
+   - get
 
-​	print(a["key1"])
+     ```
+     dict['key']
+     dict.get('key', 0)		# default값 = 0
+     ```
 
+5. 값 넣기, 수정하기
 
+   ```
+   dict['key'] = 100
+   ```
 
-​	결과:  value3
+6. 값 삭제하기
+
+   ```
+   del dict['key']
+   dict.pop('key', 0)		# 삭제하는 값 리턴하는데, key가 없을 경우 default값 = 0
+   ```
+
+7. 딕셔너리 순회하기
+
+   ```
+   for key in dict:
+   	print(key)
+   
+   for key, value in dict:
+   	print(key, value)
+   ```
+
+8. key, value 추출하기
+
+   ```
+   dict.keys()
+   dict.values()
+   dict.items()
+   ```
+
+   
+
